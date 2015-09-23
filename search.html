@@ -20,21 +20,6 @@ jQuery(document).ready(function() {
     });
 });
 </script>
-<script>
-$('.windowForm').submit(function(e){
-	// specify a unique target name
-	var target = 'windowFormTarget';
-
-	// open a new window and name it
-	window.open('', target, 'width=500,height=300');
-
-	// set the target of the form to be
-	// the window name
-	this.setAttribute('target', target);
-
-	// allow the form to be submitted normally
-});
-</script>
 </head>
 <body>
 <div id="search-wrapper">
@@ -48,7 +33,7 @@ $('.windowForm').submit(function(e){
 
     <div class="tab-content">
         <div id="tab1" class="tab active">
-             <form action="http://millscollege.on.worldcat.org/search" class="windowForm" target="_blank" method="get">
+             <form action="http://millscollege.on.worldcat.org/search" target="_blank" method="get">
                            <div id="search">
                            <div class="search-title">
 
