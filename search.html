@@ -7,15 +7,15 @@
 jQuery(document).ready(function() {
     jQuery('.tabs .tab-links a').on('click', function(e)  {
         var currentAttrValue = jQuery(this).attr('href');
- 
+
         // Show/Hide Tabs
         jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
- 
+
         // Change/remove current tab to active
         //jQuery(this).closest('h2').addClass('active').siblings().removeClass('active');
 		$('.tabs .tab-links a.selected').removeClass('selected');
         $(this).addClass('selected');
- 
+
         e.preventDefault();
     });
 });
@@ -45,18 +45,18 @@ $('.windowForm').submit(function(e){
         <a href="#tab3"><h2 class="fa fa-list-alt"><span class="tab-label"><br />Articles</span></h2></a>
         <a href="#tab4"><h2 class="fa fa-video-camera"><span class="tab-label"><br />Video</span></h2></a>
     </div>
- 
+
     <div class="tab-content">
-        <div id="tab1" class="tab active">            
-             <form action="http://palni.on.worldcat.org/search" class="windowForm" target="_blank" method="get">
+        <div id="tab1" class="tab active">
+             <form action="http://millscollege.on.worldcat.org/search" class="windowForm" target="_blank" method="get">
                            <div id="search">
                            <div class="search-title">
 
-                              <a id="advanced-search" title="Advanced Search" href="http://palni.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+                              <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
 
-                              <h3>Search <span id="search-name">OneSearch 2.0</span></h3>        
+                              <h3>Search <span id="search-name">OneSearch 2.0</span></h3>
 
-                           </div>             
+                           </div>
 
                            <div class="searchTerm">
                             <input id="realquery" placeholder="Find books, videos, music, and more...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
@@ -67,17 +67,17 @@ $('.windowForm').submit(function(e){
 
                      </form>
         </div>
- 
+
         <div id="tab2" class="tab">
-            <form action="http://palni.on.worldcat.org/search" target="_blank" method="get">
+            <form action="http://millscollege.on.worldcat.org/search" target="_blank" method="get">
                            <div id="search">
                            <div class="search-title">
 
-                              <a id="advanced-search" title="Advanced Search" href="http://palni.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+                              <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
 
-                              <h3>Find <span id="search-name">Books</span></h3>        
+                              <h3>Find <span id="search-name">Books</span></h3>
 
-                           </div>             
+                           </div>
 
                            <div class="searchTerm">
                               <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
@@ -103,16 +103,16 @@ $('.windowForm').submit(function(e){
 
                      </form>
         </div>
- 
+
         <div id="tab3" class="tab">
-            <form action="http://palni.on.worldcat.org/search" target="_blank" method="get">
+            <form action="http://millscollege.on.worldcat.org/search" target="_blank" method="get">
                            <div id="search">
                            <div class="search-title">
 
-                              <a id="advanced-search" title="Advanced Search" href="http://palni.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+                              <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
 
-                              <h3>Find <span id="search-name">Articles</span></h3>        
-                           </div>             
+                              <h3>Find <span id="search-name">Articles</span></h3>
+                           </div>
                            <div class="searchTerm">
 							  <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 							  <input type="hidden" name="databaseList" value="638">
@@ -126,16 +126,16 @@ $('.windowForm').submit(function(e){
 
                      </form>
         </div>
- 
+
         <div id="tab4" class="tab">
-           <form action="http://palni.on.worldcat.org/search" target="_blank" method="get">
+           <form action="http://millscollege.on.worldcat.org/search" target="_blank" method="get">
                            <div id="search">
                            <div class="search-title">
 
-                              <a id="advanced-search" title="Advanced Search" href="http://palni.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+                              <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
 
-                              <h3>Find <span id="search-name">Videos</span></h3>        
-                           </div>             
+                              <h3>Find <span id="search-name">Videos</span></h3>
+                           </div>
                            <div class="searchTerm">
 						      <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 							  <input type="hidden" name="databaseList" value="638">

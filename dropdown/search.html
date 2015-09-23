@@ -7,15 +7,15 @@
 jQuery(document).ready(function() {
     jQuery('.tabs .tab-links a').on('click', function(e)  {
         var currentAttrValue = jQuery(this).attr('href');
- 
+
         // Show/Hide Tabs
         jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
- 
+
         // Change/remove current tab to active
         //jQuery(this).closest('h2').addClass('active').siblings().removeClass('active');
 		$('.tabs .tab-links a.selected').removeClass('selected');
         $(this).addClass('selected');
- 
+
         e.preventDefault();
     });
 });
@@ -44,18 +44,18 @@ $('.windowForm').submit(function(e){
         <a href="#tab3"><h2 class="fa fa-list-alt"><span class="tab-label"><br />Articles<br/>&nbsp;</span></h2></a>
         <a href="#tab4"><h2 class="fa fa-video-camera"><span class="tab-label"><br />Video<br/>&nbsp;</span></h2></a>
     </div>
- 
+
     <div class="tab-content">
-        <div id="tab1" class="tab active">            
-		<form action="http://hanover.on.worldcat.org/search?" target="_blank">
+        <div id="tab1" class="tab active">
+		<form action="http://millscollege.on.worldcat.org/search?" target="_blank">
                            <div id="search">
                            <div class="search-title">
 
-                              <a id="advanced-search" title="Advanced Search" href="http://hanover.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+                              <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
 
-                              <h3>Search<span id="search-name"> Everything</span></h3>        
+                              <h3>Search<span id="search-name"> Everything</span></h3>
 
-                           </div>             
+                           </div>
 
                            <div class="searchTerm">
                               <input id="realquery" placeholder="Find books, videos, music, and more...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
@@ -72,17 +72,17 @@ $('.windowForm').submit(function(e){
 
                      </form>
         </div>
-		
+
 		<div id="tab2" class="tab">
-            <form action="http://hanover.on.worldcat.org/search?" target="_blank">
+            <form action="http://millscollege.on.worldcat.org/search?" target="_blank">
                            <div id="search">
                            <div class="search-title">
 
-                              <a id="advanced-search" title="Advanced Search" href="http://hanover.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+                              <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
 
-                              <h3>Find<span id="search-name"> Books</span></h3>        
+                              <h3>Find<span id="search-name"> Books</span></h3>
 
-                           </div>             
+                           </div>
 
                            <div class="searchTerm">
                               <input id="realquery" placeholder="Find books...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
@@ -97,7 +97,7 @@ $('.windowForm').submit(function(e){
                            </div>
 						   <div class="dropdown-menu">
 						   <select name="scope" id="searchLibrary" class="dropdown-menu">
-								<option name="scope" value="wz:1076" selected>Duggan Library</option>
+								<option name="scope" value="wz:1076" selected>Mills College Library</option>
 								<option name="scope" value="">Libraries WorldWide</option>
 							</select>
 							</div>
@@ -107,44 +107,44 @@ $('.windowForm').submit(function(e){
 
                      </form>
         </div>
- 
+
         <div id="tab3" class="tab">
-            <form action="http://hanover.on.worldcat.org/search?" target="_blank">
+            <form action="http://millscollege.on.worldcat.org/search?" target="_blank">
                            <div id="search">
                            <div class="search-title">
 
-                              <a id="advanced-search" title="Advanced Search" href="http://hanover.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+                              <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
 
-                              <h3>Find <span id="search-name">Articles</span></h3>        
-                           </div>             
+                              <h3>Find <span id="search-name">Articles</span></h3>
+                           </div>
                            <div class="searchTerm">
                               <input id="realquery" placeholder="Find articles...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
                               <input type="hidden" name="format" value="Artchap">
                               <input type="hidden" name="subformat" value="Artchap::artchap_artcl">
-							
+
                            </div>
 						   <div class="dropdown">
 						   <select name="scope" id="searchLibrary" class="dropdown-menu">
-								<option name="scope" value="wz:1076" selected>Duggan Library</option>
+								<option name="scope" value="wz:1076" selected>Mills College Library</option>
 								<option name="scope" value="">Libraries WorldWide</option>
 							</select>
-							
+
 							</div>
 							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
                         </div>
 
                      </form>
         </div>
- 
+
         <div id="tab4" class="tab">
-           <form action="http://hanover.on.worldcat.org/search?" target="_blank">
+           <form action="http://millscollege.on.worldcat.org/search?" target="_blank">
                            <div id="search">
                            <div class="search-title">
 
-                              <a id="advanced-search" title="Advanced Search" href="http://hanover.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+                              <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
 
-                              <h3>Find <span id="search-name">Videos</span></h3>        
-                           </div>             
+                              <h3>Find <span id="search-name">Videos</span></h3>
+                           </div>
                            <div class="searchTerm">
                               <input id="realquery" placeholder="Find videos...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
                               <input type="hidden" name="format" value="Video">
@@ -153,14 +153,14 @@ $('.windowForm').submit(function(e){
                               <input type="hidden" name="subformat" value="Video::video_film">
                               <input type="hidden" name="subformat" value="Video::video_digital">
                               <input type="hidden" name="subformat" value="Video::video_bluray">
-							
+
                            </div>
 						   <div class="dropdown">
 						   <select name="scope" id="searchLibrary" class="dropdown-menu">
-								<option name="scope" value="wz:1076" selected>Duggan Library</option>
+								<option name="scope" value="wz:1076" selected>Mills College Library</option>
 								<option name="scope" value="">Libraries WorldWide</option>
 							</select>
-							
+
 							</div>
 							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
                         </div>
