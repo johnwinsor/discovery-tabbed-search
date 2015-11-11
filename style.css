@@ -18,11 +18,11 @@
     margin: 0px auto 0;
     padding: 0px auto;
     text-align: center;
-    height: 92px;
+    /*height: 92px;*/
     top: 0;
     vertical-align: middle;
 }
- 
+
     /*----- Tab Links -----*/
     /* Clearfix */
     .tab-links:after {
@@ -30,7 +30,7 @@
         clear:both;
         content:'';
     }
- 
+
     .tab-links h2 {
         margin:0px 5px;
         list-style:none;
@@ -38,7 +38,7 @@
         text-decoration:none;
         color:000000;
     }
- 
+
         .tab-links a {
             padding:9px 15px;
             display:inline-block;
@@ -49,7 +49,7 @@
             text-decoration:none;
 			color: rgb(0, 0, 0);
     }
-	
+
 		.tab-links a.selected h2 {
 		   color: rgb(0,160,223);
 		}
@@ -64,27 +64,27 @@
         font-family: "Source Sans Pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
         color: #000000;
     }
- 
+
     /*----- Content of Tabs -----*/
     .tab-content {
         padding:15px;
         border-radius:3px;
         text-align:center;
 }
- 
+
         .tab {
             display:none;
 }
- 
+
         .tab.active {
             display:block;
 }
-        
+
     /*----- Search Boxes -----*/
 	.searchTerm {
     position: relative;
 }
-	
+
 	#search h3 {
     font-size: 1.5em;
     width: 95%;
@@ -109,7 +109,7 @@
     border: 0;
     outline: 2px solid rgb(0,105,170);
 }
-    
+
     input.headersubmit {
     display: inline;
     -webkit-appearance: none;
@@ -130,9 +130,46 @@
     a#advanced-search {
     float:right;
     line-height: 0;
-    margin-top: 20px; 
+    margin-top: 20px;
     margin-right: 20px;
     font-size: .8em;
 	text-decoration: none;
 }
 
+
+/*----- Flexbox -----*/
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  background: #f9fbfa;
+  width: 300px;
+  padding: 5px;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.flex-item h3 {
+    color: #FF6D00;
+}
+
+.flex-item li {
+  list-style-type: none;
+  padding: 8px 5px 8px 10px;
+}

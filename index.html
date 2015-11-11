@@ -30,134 +30,174 @@
     <div id="millsheader"></div>
     <div class="maincontent">
         <div class="container-fluid">
-
-
-
             <div id="search-wrapper">
-            <div class="tabs">
-                <div class="tab-links">
-                    <a href="#tab1" class="selected"><h2 class="fa fa-university"><br /><span class="tab-label">Everything</span></h2></a>
-                    <a href="#tab2"><h2 class="fa fa-book"><span class="tab-label"><br />Books</span></h2></a>
-                    <a href="#tab3"><h2 class="fa fa-list-alt"><span class="tab-label"><br />Articles</span></h2></a>
-                    <a href="#tab4"><h2 class="fa fa-video-camera"><span class="tab-label"><br />Video</span></h2></a>
-                </div>
+                <div class="tabs">
+                    <div class="tab-links">
+                        <a href="#tab1" class="selected"><h2 class="fa fa-university"><br /><span class="tab-label">Everything</span></h2></a>
+                        <a href="#tab2"><h2 class="fa fa-book"><span class="tab-label"><br />Books</span></h2></a>
+                        <a href="#tab3"><h2 class="fa fa-list-alt"><span class="tab-label"><br />Articles</span></h2></a>
+                        <a href="#tab4"><h2 class="fa fa-video-camera"><span class="tab-label"><br />Video</span></h2></a>
+                    </div>
 
-                <div class="tab-content">
-                    <div id="tab1" class="tab active">
-                         <form action="http://millscollege.on.worldcat.org/search" method="get">
-                                       <div id="search">
-                                       <div class="search-title">
-
-                                          <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch">Advanced Search</a>
-
-                                          <h3>Minerva <span id="search-name">OneSearch</span></h3>
-
-                                       </div>
-
-                                       <div class="searchTerm">
+                    <div class="tab-content">
+                        <div id="tab1" class="tab active">
+                            <form action="http://millscollege.on.worldcat.org/search" method="get">
+                                <div id="search">
+                                    <div class="search-title">
+                                        <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch">Advanced Search</a>
+                                        <h3>Minerva <span id="search-name">OneSearch</span></h3>
+                                    </div>
+                                    <div class="searchTerm">
                                         <input id="realquery" placeholder="Find books, videos, music, and more...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
-            							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
-                                       </div>
+                                        <input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="tab2" class="tab">
+                                <form action="http://millscollege.on.worldcat.org/search" method="get">
+                                <div id="search">
+                                    <div class="search-title">
+                                        <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch">Advanced Search</a>
+                                        <h3>Find <span id="search-name">Books</span></h3>
 
                                     </div>
 
-                                 </form>
-                    </div>
-
-                    <div id="tab2" class="tab">
-                        <form action="http://millscollege.on.worldcat.org/search" method="get">
-                                       <div id="search">
-                                       <div class="search-title">
-
-                                          <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch">Advanced Search</a>
-
-                                          <h3>Find <span id="search-name">Books</span></h3>
-
-                                       </div>
-
-                                       <div class="searchTerm">
-                                          <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
-            							  <input id="realquery" placeholder="Find books...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
-                                          <input type="hidden" name="format" value="Book">
-            							  <input type="hidden" name="subformat" value="Book::book_printbook">
-                                          <input type="hidden" name="subformat" value="Book::book_digital">
-                                          <input type="hidden" name="subformat" value="Book::book_thsis">
-                                          <input type="hidden" name="subformat" value="Book::book_mic">
-                                          <input type="hidden" name="subformat" value="Book::book_largeprint">
-                                          <input type="hidden" name="subformat" value="Book::book_braille">
-                                          <input type="hidden" name="subformat" value="Book::book_continuing">
-            							  <input type="hidden" name="database" value="all">
-            							  <input type="hidden" name="author" value="all">
-            							  <input type="hidden" name="year" value="all">
-            							  <input type="hidden" name="yearFrom" value="">
-            							  <input type="hidden" name="yearTo" value="">
-            							  <input type="hidden" name="language" value="all">
-            							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
-                                       </div>
-
+                                    <div class="searchTerm">
+                                        <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+                                        <input id="realquery" placeholder="Find books...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+                                        <input type="hidden" name="format" value="Book">
+                                        <input type="hidden" name="subformat" value="Book::book_printbook">
+                                        <input type="hidden" name="subformat" value="Book::book_digital">
+                                        <input type="hidden" name="subformat" value="Book::book_thsis">
+                                        <input type="hidden" name="subformat" value="Book::book_mic">
+                                        <input type="hidden" name="subformat" value="Book::book_largeprint">
+                                        <input type="hidden" name="subformat" value="Book::book_braille">
+                                        <input type="hidden" name="subformat" value="Book::book_continuing">
+                                        <input type="hidden" name="database" value="all">
+                                        <input type="hidden" name="author" value="all">
+                                        <input type="hidden" name="year" value="all">
+                                        <input type="hidden" name="yearFrom" value="">
+                                        <input type="hidden" name="yearTo" value="">
+                                        <input type="hidden" name="language" value="all">
+                                        <input type="submit" class="headersubmit" value="&#xf002;" title="Search">
                                     </div>
+                                </div>
+                            </form>
+                        </div>
 
-                                 </form>
-                    </div>
-
-                    <div id="tab3" class="tab">
-                        <form action="http://millscollege.on.worldcat.org/search" method="get">
-                                       <div id="search">
-                                       <div class="search-title">
-
-                                          <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch">Advanced Search</a>
-
-                                          <h3>Find <span id="search-name">Articles</span></h3>
-                                       </div>
-                                       <div class="searchTerm">
-            							  <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
-            							  <input type="hidden" name="databaseList" value="638">
-            							  <input id="realquery" placeholder="Find articles...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
-            							  <input type="hidden" name="format" value="Artchap">
-                                          <input type="hidden" name="subformat" value="Artchap::artchap_artcl">
-            							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
-                                       </div>
-
+                        <div id="tab3" class="tab">
+                            <form action="http://millscollege.on.worldcat.org/search" method="get">
+                                <div id="search">
+                                    <div class="search-title">
+                                        <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch">Advanced Search</a>
+                                        <h3>Find <span id="search-name">Articles</span></h3>
                                     </div>
-
-                                 </form>
-                    </div>
-
-                    <div id="tab4" class="tab">
-                       <form action="http://millscollege.on.worldcat.org/search" method="get">
-                                       <div id="search">
-                                       <div class="search-title">
-
-                                          <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch">Advanced Search</a>
-
-                                          <h3>Find <span id="search-name">Videos</span></h3>
-                                       </div>
-                                       <div class="searchTerm">
-            						      <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
-            							  <input type="hidden" name="databaseList" value="638">
-                                          <input id="realquery" placeholder="Find videos...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
-                                          <input type="hidden" name="format" value="Video">
-                                          <input type="hidden" name="subformat" value="Video::video_dvd">
-                                          <input type="hidden" name="subformat" value="Video::video_vhs">
-                                          <input type="hidden" name="subformat" value="Video::video_film">
-                                          <input type="hidden" name="subformat" value="Video::video_digital">
-                                          <input type="hidden" name="subformat" value="Video::video_bluray">
-            							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
-                                       </div>
-
+                                    <div class="searchTerm">
+                                        <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+                                        <input type="hidden" name="databaseList" value="638">
+                                        <input id="realquery" placeholder="Find articles...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+                                        <input type="hidden" name="format" value="Artchap">
+                                        <input type="hidden" name="subformat" value="Artchap::artchap_artcl">
+                                        <input type="submit" class="headersubmit" value="&#xf002;" title="Search">
                                     </div>
+                                </div>
+                            </form>
+                        </div>
 
-                                 </form>
+                        <div id="tab4" class="tab">
+                            <form action="http://millscollege.on.worldcat.org/search" method="get">
+                                <div id="search">
+                                    <div class="search-title">
+                                        <a id="advanced-search" title="Advanced Search" href="http://millscollege.on.worldcat.org/advancedsearch">Advanced Search</a>
+                                        <h3>Find <span id="search-name">Videos</span></h3>
+                                    </div>
+                                    <div class="searchTerm">
+                                        <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+                                        <input type="hidden" name="databaseList" value="638">
+                                        <input id="realquery" placeholder="Find videos...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+                                        <input type="hidden" name="format" value="Video">
+                                        <input type="hidden" name="subformat" value="Video::video_dvd">
+                                        <input type="hidden" name="subformat" value="Video::video_vhs">
+                                        <input type="hidden" name="subformat" value="Video::video_film">
+                                        <input type="hidden" name="subformat" value="Video::video_digital">
+                                        <input type="hidden" name="subformat" value="Video::video_bluray">
+                                        <input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div id="subcontent">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <div>
+                            <h3>Using the Library</h3>
+                            <ul>
+                                <li><a href="https://library.mills.edu/patroninfo~S6/top/">Library account</a></li>
+                                <li><a href="http://exene.mills.edu/databases/">Electronic Resources</a></li>
+                                <li><a href="https://millscollege.on.worldcat.org/atoztitles/search#journal">E-Journals A-Z</a></li>
+                                <li><a href="http://library.mills.edu/screens/ill.html">Interlibrary loan (ILL)</a></li>
+                                <li><a href="http://library.mills.edu/screens/connect.html">Ask a librarian</a></li>
+                                <li><a href="http://www.mills.edu/academics/library/exceptions.php">Hours</a></li>
+                                <li><a href="http://exene.mills.edu/rooms/Web/rooms.html">Group Study Rooms</a></li>
+                                <li><a href="http://www.mills.edu/academics/library/library_information/faq.php">Using the Library</a></li>
+                                <li><a href="">Workshops</a></li>
+                            </ul>
+                            <h3>For Faculty</h3>
+                            <ul>
+                                <li><a href="http://exene.mills.edu/files/LibraryInformationforFaculty.pdf">Library Information for Faculty</a></li>
+                                <li><a href="https://intranet.mills.edu/library/faculty/reserves.php">Course Reserves</a></li>
+                                <li><a href="http://library.mills.edu/screens/connect.html">Ask a librarian</a></li>
+                                <li><a href="http://www.mills.edu/academics/library/exceptions.php">Hours</a></li>
+                                <li><a href="http://exene.mills.edu/rooms/Web/rooms.html">Group Study Rooms</a></li>
+                                <li><a href="http://www.mills.edu/academics/library/library_information/faq.php">Using the Library</a></li>
+                                <li><a href="">Workshops</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <h3>Subject Guides</h3>
+                                <ul>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=ANTH">Anthropology</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=arth">Arts and Art History</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=bio">Biology</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=Book">Book Art</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=chem">Chemistry</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=cs">Computer Science</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=copyright">Copyright</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=DNC">Dance</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=econ">Economics and MBA</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=educ">Education</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=English">English</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=ETHS">Ethnic Studies</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=French">French &amp; Francophone Studies</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=health">Health Science</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=history">History</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=math">Mathematics</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=music">Music</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=PHIL">Philosophy</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=phys">Physics</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=polisci">Political Science and Government</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=PSYC">Psychology</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=REL">Religious Studies</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=Sociology">Sociology</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=Spanish">Spanish and Spanish American Studies</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=SLT">Student Learning Tools</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=sra">Student Research: Styles, Citations, and Guides</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=THS">Theater Studies</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=Thesis">Thesis/Dissertation - Documentation for Uploads</a></li>
+                                    <li><a href="http://subjectguides.mills.edu/subjects/guide.php?subject=WGSS">Women's, Gender and Sexuality Studies</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
-
-
-
         </div>
     </div>
     <div id="millsfooter"></div>
